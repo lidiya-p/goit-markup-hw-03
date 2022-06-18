@@ -60,6 +60,8 @@ img {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    outline: 1px solid teal;
 }
 
 .page-header {
@@ -160,9 +162,9 @@ img {
 /* main Студия*/
 .hero-section {
     margin: 0 auto;
+    padding: 200px 0;
 
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
 
     background-color: var(--bcg-hero);
 
@@ -231,7 +233,7 @@ img {
     margin-right: 30px;
 }
 
-.section-benefits .section-list {
+.section-benefits {
     padding: 94px 0;
 }
 
@@ -245,12 +247,16 @@ img {
     text-transform: uppercase;
 }
 
+.section-benefits .item-text {
+    line-height: 1.7;
+}
+
 
 .section-img .section-title {
     margin-bottom: 50px;
 }
 
-.section-img .section-list {
+.section-img {
     padding-bottom: 94px;
 }
 
@@ -258,38 +264,51 @@ img {
     background-color: var(--bcg-button);
 }
 
+.section-team {
+    padding-bottom: 94px;
+}
+
 .section-team .section-title {
     margin-bottom: 50px;
     padding-top: 94px;
 }
 
+.section-team .section-item {
+    background-color: var(--bcg-main);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-team {
+    padding: 30px 0;
+}
+
 .section-team .section-item h3 {
-    margin-top: 30px;
     margin-bottom: 10px;
 
     color: var(--header-text);
 
     font-weight: 500;
-    font-size: 16px;  
+    font-size: 16px;
+    text-align: center;
 }
-
 
 .section-team .section-item p {
-    margin-bottom: 30px;
+   
     font-size: 16px;
+    text-align: center;
 }
 
-.section-team .section-list {
-    padding-bottom: 94px;
-}
+
 
 /* Footer */
 .page-footer {
+    padding: 60px 0;
+
     background-color: var(--bcg-hero);
 }
 
 .page-footer .logo {
-    padding-top: 60px;
     margin-bottom: 20px;
 
     color: var(--white-text);
@@ -300,8 +319,6 @@ img {
 
 .contact-list {
     list-style-type: none;
-
-    padding-bottom: 60px;
 
     font-style: normal;
     line-height: 1.7;
